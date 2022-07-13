@@ -1,0 +1,69 @@
+@import "../../../../assets/styles/variables.scss";
+@import "../../../../assets/styles/media-variables.scss";
+
+.header-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  background-color: $blue;
+}
+
+img{
+    @media screen and (max-width: $xl){
+        width: 200px;
+    }
+
+    @media screen and (max-width: $sm){
+        width: 136px;
+        height: 35px;
+    }
+}
+
+.flex-end{
+    display: flex;
+    justify-content: end;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  
+    @media screen and (max-width: $md) {
+      justify-content: end;
+    }
+  }
+  
+  menu {
+    margin-right: 20px;
+  
+    @media screen and (max-width: $md) {
+      display: none;
+      margin-right: 0;
+    }
+  }
+
+.icon {
+  display: none;
+
+  @media screen and (max-width: $md) {
+    display: flex;
+    margin-right: 20px;
+  }
+}
+
+.circle{
+    width: 13px;
+    height: 13px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 6px;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+
+
