@@ -1,23 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
-@import "assets/styles/variables.scss" ;
+@import "variables.scss";
 
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat";
 }
 
-a{
-    text-decoration: none;
-    color: white;
+h1,
+.h1 {
+  font-weight: 900;
+  font-size: 50px;
+  color: #484848;
+}
+
+h2,
+.h2 {
+  font-style: 32px;
+  font-weight: 800;
+  text-align: center;
+}
+
+h3,
+.h3{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 button {
-    color: white;
-    background-color: $light-green;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 5px;
-    border: none;
+  color: white;
+  background-color: $color-cta;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
 }
 
+input {
+  padding: 5px 15px;
+  background-color: white;
+  border: 1px solid $color-active;
+  border-radius: 10px;
+  color: $color-input-text;
+  outline: none;
+
+  &:focus {
+    color: black;
+    border-width: 2px;
+  }
+}
+
+.slider-button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    width: 60px;
+    height: 60px;
+    color: black;
+    background-color: white;
+    border: 2px solid $color-active;
+    border-radius: 15px;
+
+    &:active{
+        background-color: $color-active;
+        color: white;
+    }
+}
+
+.sphere {
+  width: 50px;
+  height: 50px;
+}

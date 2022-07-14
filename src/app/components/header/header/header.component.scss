@@ -1,12 +1,12 @@
-@import "../../../../assets/styles/variables.scss";
-@import "../../../../assets/styles/media-variables.scss";
+@import "variables.scss";
+@import "media-variables.scss";
 
 .header-wrapper {
   position: relative;
   display: flex;
   align-items: center;
   padding: 20px 0;
-  background-color: $blue;
+  background-color: $color-active;
 }
 
 img{
