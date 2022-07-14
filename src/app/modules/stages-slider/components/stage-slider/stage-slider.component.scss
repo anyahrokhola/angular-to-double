@@ -1,0 +1,87 @@
+@import "variables.scss";
+@import "media-variables.scss";
+
+.wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+  @media (min-width: 1400px) {
+    max-width: 100%;
+    margin-left: calc((100vw - 1320px) / 2);
+    margin-right:155px;
+  }
+}
+
+.item {
+  padding-right: 20px;
+
+
+  @media (max-width: $xl) {
+    padding-right: 0;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 33px;
+  border: 1px solid $color-active;
+  border-radius: 15px;
+
+  @media screen and (max-width: $md) {
+    flex-direction: column;
+    padding: 20px;
+    height: 615px;
+  }
+}
+
+.img-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 280px;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.description {
+  margin: 20px 0;
+  width: 300px;
+
+  @media screen and (max-width: $md) {
+    width: 250px;
+  }
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.slider-button {
+  margin-right: 30px;
+}

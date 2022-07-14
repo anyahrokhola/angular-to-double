@@ -1,0 +1,21 @@
+<div class="wrapper">
+  <si-ng-carousel [visible]="{lg: 2, all: 1}" [showButtons]="false">
+    <div *ngFor="let stage of data" siCarouselItem class="item">
+      <div class="content">
+        <div class="text-content">
+          <span class="h3">{{ stage.id }}. {{ stage.name }}</span>
+          <p class="description">{{ stage.description }}</p>
+        </div>
+        <div class="img-content">
+          <img src="{{ stage.img }}" />
+        </div>
+      </div>
+    </div>
+  </si-ng-carousel>
+</div>
+<div class="container">
+  <div class="options">
+    <button class="slider-button" (click)="prev()"><</button>
+    <button class="slider-button" (click)="next()">></button>
+  </div>
+</div>
