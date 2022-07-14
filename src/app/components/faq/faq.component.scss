@@ -1,0 +1,31 @@
+@import "variables.scss";
+@import "media-variables.scss";
+
+.faq-wrapper {
+  position: relative;
+  padding: 100px 0;
+  background-color: $color-background;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.row {
+  position: relative;
+}
+
+.bag {
+  display: block;
+  position: absolute;
+  right: 90px;
+  bottom: 150px;
+  width: 100px;
+  height: 120px;
+
+  @media screen and (max-width: 1500px) {
+    display: none;
+    
+  }
+}

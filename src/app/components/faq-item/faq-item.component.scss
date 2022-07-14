@@ -1,0 +1,97 @@
+@import "variables.scss";
+@import "media-variables.scss";
+
+.faq-item {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 40px;
+  margin: 10px 0;
+
+  @media screen and (max-width: $md) {
+    padding: 15px 15px;
+  }
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $color-cta;
+  border: none;
+  margin-right: 20px;
+  transition: 300ms;
+}
+
+.active .circle {
+  background-color: $color-active;
+}
+
+.name {
+  @media screen and (max-width: $md) {
+    font-size: 13px;
+  }
+}
+
+i {
+  cursor: pointer;
+  font-size: 36px;
+  transition: 300ms;
+
+  @media screen and (max-width: $md) {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+}
+
+.active i {
+  transform: rotate(180deg);
+}
+
+.answer {
+  position: relative;
+  max-height: 0;
+  overflow: hidden;
+  transition: 300ms;
+}
+
+.active .answer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 10px 0;
+  max-height: 300px;
+
+  @media screen and (max-width: $sm) {
+    max-height: 600px;
+  }
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 2px;
+    background-color: black;
+    height: 90%;
+  }
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 0 40px;
+
+  @media screen and (max-width: $md) {
+    font-size: 14px;
+  }
+}

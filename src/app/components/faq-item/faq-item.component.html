@@ -1,0 +1,16 @@
+<div class="faq-item" [class.active]="isOpen">
+  <div class="question">
+    <div class="wrapper">
+      <div class="circle"></div>
+      <div class="name">{{question}}</div>
+    </div>
+    <div class="arrow" >
+      <i class="fa-solid fa-angle-down" (click)="open()"></i>
+    </div>
+  </div>
+  <div class="answer">
+    <div class="text">
+        {{answer}}
+    </div>
+  </div>
+</div>
