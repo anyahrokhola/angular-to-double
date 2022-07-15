@@ -1,18 +1,17 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostBinding, Input } from '@angular/core';
 
 @Component({
   selector: 'faq-item',
   templateUrl: './faq-item.component.html',
-  styleUrls: ['./faq-item.component.scss']
+  styleUrls: ['./faq-item.component.scss'],
 })
-export class FaqItemComponent  {
+export class FaqItemComponent {
   @Input() question = '';
-  @Input() answer = '';
+
+  @HostBinding('class.active')
   public isOpen = false;
 
-  constructor() { }
-
-  open(){
-    this.isOpen = !this.isOpen
+  open() {
+    this.isOpen = !this.isOpen;
   }
 }

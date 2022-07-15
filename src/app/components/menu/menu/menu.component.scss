@@ -1,5 +1,13 @@
 @import "media-variables.scss";
 
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0;
+}
+
 ul {
   display: flex;
   justify-content: center;
@@ -23,9 +31,10 @@ li {
 
 a {
   font-weight: 600;
+  color: white;
 
   &:hover {
-    color: white;
+    text-decoration: none;
     border-bottom: 3px solid white;
   }
 
@@ -39,4 +48,3 @@ a {
     font-size: 22px;
   }
 }
-

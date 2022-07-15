@@ -84,28 +84,7 @@ img {
   }
 }
 
-.options {
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
+.options{
+  margin-top: 40px;
   margin-bottom: 60px;
-
-  @media screen and (max-width: $xl) {
-    margin-bottom: 0;
-  }
-
-  @media screen and (max-width: $sm) {
-    margin-top: 25px;
-    margin-bottom: 45px;
-    padding: 0 37px;
-    justify-content: space-between;
-  }
-}
-
-.slider-button {
-  margin-right: 30px;
-
-  @media screen and (max-width: $sm) {
-    margin-right: 0;
-  }
 }

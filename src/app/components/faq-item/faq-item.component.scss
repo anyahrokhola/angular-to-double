@@ -1,7 +1,8 @@
 @import "variables.scss";
 @import "media-variables.scss";
 
-.faq-item {
+:host {
+  display: block;
   background-color: white;
   border-radius: 15px;
   padding: 15px 40px;
@@ -10,35 +11,36 @@
   @media screen and (max-width: $md) {
     padding: 15px 15px;
   }
-}
 
-.question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  &.active {
+    i {
+      transform: rotate(180deg);
+    }
 
-.wrapper {
-  display: flex;
-}
+    .circle {
+      background-color: $color-active;
+    }
 
-.circle {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: $color-cta;
-  border: none;
-  margin-right: 20px;
-  transition: 300ms;
-}
+    .answer {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding: 10px 0;
+      max-height: 300px;
 
-.active .circle {
-  background-color: $color-active;
-}
+      @media screen and (max-width: $sm) {
+        max-height: 600px;
+      }
 
-.name {
-  @media screen and (max-width: $md) {
-    font-size: 13px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        width: 2px;
+        background-color: black;
+        height: 90%;
+      }
+    }
   }
 }
 
@@ -53,8 +55,31 @@ i {
   }
 }
 
-.active i {
-  transform: rotate(180deg);
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.circle {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: $color-cta;
+  border: none;
+  margin-right: 20px;
+  transition: 300ms;
+}
+
+.name {
+  @media screen and (max-width: $md) {
+    font-size: 13px;
+  }
 }
 
 .answer {
@@ -62,27 +87,6 @@ i {
   max-height: 0;
   overflow: hidden;
   transition: 300ms;
-}
-
-.active .answer {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 10px 0;
-  max-height: 300px;
-
-  @media screen and (max-width: $sm) {
-    max-height: 600px;
-  }
-
-  &::before{
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    width: 2px;
-    background-color: black;
-    height: 90%;
-  }
 }
 
 .text {

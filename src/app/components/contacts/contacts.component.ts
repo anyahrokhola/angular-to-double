@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -6,7 +6,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   templateUrl: './contacts.component.html',
   styleUrls: ['./contacts.component.scss'],
 })
-export class ContactsComponent implements OnInit {
+export class ContactsComponent{
   public form = new FormGroup({
     name: new FormControl('', Validators.required),
     phone: new FormControl('', Validators.required),
@@ -23,10 +23,17 @@ export class ContactsComponent implements OnInit {
     return this.form.controls.email;
   }
 
-  constructor() {}
+  hasError(control: FormControl): boolean {
+    return control.invalid && (control.dirty || control.touched);
+  }
 
-  ngOnInit(): void {
-    this.phoneControl.valueChanges.subscribe((value) => console.log(value));
-    this.emailControl.valueChanges.subscribe((value) => console.log(value));
+  submit() {
+    if (this.form.invalid) {
+      this.form.markAllAsTouched();
+      return;
+    }
+
+    this.form.reset();
+    alert('Форма отправлена');
   }
 }

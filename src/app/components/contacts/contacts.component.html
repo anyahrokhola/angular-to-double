@@ -7,30 +7,29 @@
   <form class="form" [formGroup]="form">
     <input-text
       formControlName="name"
-      [class.error]="
-        nameControl.invalid && (nameControl.dirty || nameControl.touched)
-      "
-      class="input"
+      [class.error]="hasError(nameControl)"
     ></input-text>
     <input-text
       formControlName="phone"
-      [class.error]="
-        phoneControl.invalid && (phoneControl.dirty || phoneControl.touched)
-      "
+      [class.error]="hasError(phoneControl)"
       placeholder="Telegram/Viber"
-      class="input"
     ></input-text>
     <input-text
       formControlName="email"
-      [class.error]="
-        emailControl.invalid && (emailControl.dirty || emailControl.touched)
-      "
-      class="input"
+      [class.error]="hasError(emailControl)"
       placeholder="Email"
     ></input-text>
-    <main-button text="Отправить"></main-button>
+    <main-button text="Отправить" (click)="submit()"></main-button>
   </form>
-  <img src="assets/carpet-purple-rotate.png" alt="carpet-purple" class="carpet hidden">
-  <img src="assets/sphere-light-blue.png" alt="sphere-light-blue" class="sphere hidden">
-  <img src="assets/postpaid.png" alt="postpaid" class="postpaid">
+  <img
+    class="carpet hidden"
+    src="assets/carpet-purple-rotate.png"
+    alt="carpet-purple"
+  />
+  <img
+    class="sphere hidden"
+    src="assets/sphere-light-blue.png"
+    alt="sphere-light-blue"
+  />
+  <img class="postpaid" src="assets/postpaid.png" alt="postpaid" />
 </div>
