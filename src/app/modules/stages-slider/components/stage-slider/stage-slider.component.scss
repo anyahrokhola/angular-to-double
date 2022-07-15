@@ -7,22 +7,22 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: 576px) {
+  @media screen and (min-width: $sm) {
     max-width: 540px;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: $md) {
     max-width: 720px;
   }
 
-  @media (min-width: 992px) {
+  @media screen and (min-width: $lg) {
     max-width: 960px;
   }
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: $xl) {
     max-width: 1140px;
   }
-  @media (min-width: 1400px) {
+  @media screen and (min-width: 1400px) {
     max-width: 100%;
     margin-left: calc((100vw - 1320px) / 2);
     margin-right:155px;
@@ -32,8 +32,7 @@
 .item {
   padding-right: 20px;
 
-
-  @media (max-width: $xl) {
+  @media screen and (max-width: $xl) {
     padding-right: 0;
   }
 }
@@ -42,6 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
   padding: 33px;
   border: 1px solid $color-active;
   border-radius: 15px;
@@ -67,7 +67,7 @@
 img {
   width: 250px;
   height: 250px;
-  object-fit: cover;
+  object-fit: contain;
 
   @media screen and (max-width: $sm) {
     width: 220px;

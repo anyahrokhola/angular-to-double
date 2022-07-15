@@ -8,7 +8,6 @@ import { NgCarouselComponent } from '@silmar/ng-carousel';
 })
 export class WebsitesComponent {
   @ViewChild(NgCarouselComponent) carousel!: NgCarouselComponent;
-  constructor() {}
 
   public next() {
     this.carousel.next();

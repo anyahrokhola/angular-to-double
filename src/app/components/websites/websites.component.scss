@@ -30,7 +30,7 @@ h2 {
     }
   }
 
-  @media (max-width: $sm) {
+  @media screen and (max-width: $sm) {
     height: 260px;
   }
 }

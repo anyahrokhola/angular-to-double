@@ -13,8 +13,8 @@ import {
 })
 export class MobileMenuComponent {
   @HostBinding('class.active') @Input() isOpen = false;
+  
   @Output() isOpenChange = new EventEmitter<boolean>();
-  constructor() {}
 
   close() {
     this.isOpen = false;

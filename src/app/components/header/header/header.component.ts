@@ -8,8 +8,6 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   public isOpen = false;
 
-  constructor() {}
-
   public open() {
     this.isOpen = !this.isOpen;
   }
