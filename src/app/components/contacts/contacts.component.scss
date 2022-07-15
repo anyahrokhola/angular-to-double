@@ -1,18 +1,44 @@
-.section-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@import "media-variables.scss";
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.description{
-    text-align: center;
-    max-width: 480px;
-    margin: 20px 0;
+.phone-call {
+  position: absolute;
+  top: 150px;
+  left: 12%;
 }
 
-.form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.description {
+  text-align: center;
+  max-width: 480px;
+  margin: 20px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carpet,
+.sphere{
+    position: absolute;
+    right: 18%;
+}
+
+.carpet{
+    top: 180px;
+}
+
+.postpaid {
+  display: block;
+  margin-top: 42px;
+  @media screen and (min-width: $sm) {
+    display: none;
+  }
 }

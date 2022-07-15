@@ -1,45 +1,58 @@
 @import "variables.scss";
+@import "media-variables.scss";
 
-.website-wrapper {
+.section-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 60px 0;
   text-align: center;
-  background-color: $color-background;
 }
 
 h2 {
   margin-bottom: 50px;
 }
 
-.info-wrapper {
+.wrapper{
+    padding: 0 15px 30px;
+}
+
+.info {
   cursor: pointer;
   position: relative;
-  margin: 10px 0;
+  overflow: hidden;
+  border-radius: 15px;
+  width: 100%;
+  height: 450px;
 
-  &:hover {
+  &:hover{
     .hint-block {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      right: 0;
-      background-color: $color-active;
+        transform: translateY(0);
     }
+  }
+
+  @media (max-width: $sm) {
+    height: 260px;
   }
 }
 
 img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .hint-block {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
   color: white;
-  border-radius: 15px;
+  background-color: $color-active;
+  transform: translateY(100%);
+  transition: transform 300ms;
 }

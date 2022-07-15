@@ -1,64 +1,75 @@
-<div class="website-wrapper">
+<div class="section-wrapper background">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <h2>Примеры онлайн магазинов</h2>
       </div>
-      <div class="col-6 info-wrapper">
-        <div class="img-wrapper">
-          <img src="../../../assets/websites-img/shop-carts.png" alt="" />
+    </div>
+  </div>
+  <div class="container">
+    <si-ng-carousel [visible]="{ lg: 2, all: 1 }" [showButtons]="false">
+      <div siCarouselItem class="item">
+        <div class="wrapper">
+          <div class="info">
+            <img src="../../../assets/websites-img/shop-carts.png" alt="" />
+            <div class="hint-block">
+              <span class="h3">Онлайн магазин</span>
+              <span>для оптовых покупок</span>
+            </div>
+          </div>
         </div>
-        <div class="hint-block">
-          <span class="h3">Онлайн магазин</span>
-          <span>для оптовых покупок</span>
+        <div class="wrapper">
+          <div class="info">
+            <img src="../../../assets/websites-img/flower.png" alt="" />
+            <div class="hint-block">
+              <span class="h3">Онлайн магазин</span>
+              <span>для флористов</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-6 info-wrapper">
-        <div class="img-wrapper">
-          <img src="../../../assets/websites-img/flower.png" alt="" />
-        </div>
-        <div class="hint-block">
-          <span class="h3">Онлайн магазин</span>
-          <span>для флористов</span>
-        </div>
-      </div>
-      <div class="col-6 info-wrapper">
-        <div class="img-wrapper">
-          <img src="../../../assets/websites-img/hair-dryer.png" alt="" />
-        </div>
-        <div class="hint-block">
-          <span class="h3">Онлайн магазин</span>
-          <span>для парихмахеров</span>
-        </div>
-      </div>
-      <div class="col-6 info-wrapper">
-        <div class="img-wrapper">
-          <img src="../../../assets/websites-img/pexels-shiny-diamond.png" alt="" />
-        </div>
-        <div class="hint-block">
-          <span class="h3">Онлайн магазин</span>
-          <span>для визажистов</span>
-        </div>
-      </div>
-      <div class="col-6 info-wrapper">
-        <div class="img-wrapper">
-          <img src="../../../assets/websites-img/cake.png" alt="" />
-        </div>
-        <div class="hint-block">
-          <span class="h3">Онлайн магазин</span>
-          <span>для кондитеров</span>
-        </div>
-      </div>
-      <div class="col-6 info-wrapper">
-        <div class="img-wrapper">
-          <img src="../../../assets/websites-img/color-palette.png" alt="" />
-        </div>
-        <div class="hint-block">
-          <span class="h3">Онлайн магазин</span>
-          <span>для художников</span>
+        <div class="wrapper">
+          <div class="info">
+            <img src="../../../assets/websites-img/hair-dryer.png" alt="" />
+            <div class="hint-block">
+              <span class="h3">Онлайн магазин</span>
+              <span>для парихмахеров</span>
+            </div>
+          </div>
         </div>
       </div>
 
-    </div>
+      <div siCarouselItem class="item">
+        <div class="wrapper">
+          <div class="info">
+            <img
+              src="../../../assets/websites-img/pexels-shiny-diamond.png"
+              alt=""
+            />
+            <div class="hint-block">
+              <span class="h3">Онлайн магазин</span>
+              <span>для визажистов</span>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="info">
+            <img src="../../../assets/websites-img/cake.png" alt="" />
+            <div class="hint-block">
+              <span class="h3">Онлайн магазин</span>
+              <span>для кондитеров</span>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="info">
+            <img src="../../../assets/websites-img/color-palette.png" alt="" />
+            <div class="hint-block">
+              <span class="h3">Онлайн магазин</span>
+              <span>для художников</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </si-ng-carousel>
   </div>
 </div>

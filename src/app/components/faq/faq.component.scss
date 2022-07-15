@@ -1,15 +1,9 @@
 @import "variables.scss";
 @import "media-variables.scss";
 
-.faq-wrapper {
-  position: relative;
-  padding: 100px 0;
-  background-color: $color-background;
-}
 
 h2 {
-  text-align: center;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 .row {
@@ -26,6 +20,5 @@ h2 {
 
   @media screen and (max-width: 1500px) {
     display: none;
-    
   }
 }
