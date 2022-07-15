@@ -1,6 +1,45 @@
 @import "variables";
 @import "media-variables";
 
+.cylinder {
+  position: absolute;
+  top: 30px;
+  right: 50%;
+}
+
+.border-green-elipse,
+.border-elipse {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid $color-active;
+  z-index: -1;
+}
+
+.border-green-elipse {
+  display: none;
+  top: 30px;
+  left: -50px;
+  width: 100px;
+  height: 60px;
+  border-color: $color-cta;
+
+  @media screen and (max-width: $sm) {
+    display: block;
+  }
+}
+
+.carpet-rotate{
+  position: absolute;
+  display: none;
+  height: 60px;
+  top: 250px;
+  left: 0;
+
+  @media screen and (max-width: $sm) {
+    display: block;
+  }
+}
+
 .intro-text {
   @media screen and (max-width: $xl) {
     display: flex;
@@ -40,14 +79,13 @@ h1 {
   font-weight: 400;
 }
 
-
 .img-wrapper {
   display: flex;
   justify-content: center;
 }
 
 .intro-img {
-  object-fit: cover;
+  object-fit: contain;
 
   @media screen and (max-width: 1400px) {
     width: 500px;
@@ -102,6 +140,17 @@ $elipse-width: 1200px;
     width: $elipse-width;
     right: calc($elipse-width / -2);
     height: 30%;
+  }
+}
+
+.border-elipse {
+  bottom: 40px;
+  left: -150px;
+  width: 300px;
+  height: 180px;
+
+  @media screen and (max-width: $sm) {
+    display: none;
   }
 }
 

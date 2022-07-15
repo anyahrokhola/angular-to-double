@@ -30,13 +30,31 @@ li {
 }
 
 a {
+  position: relative;
   font-weight: 600;
   color: white;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: -5px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
   &:hover {
     text-decoration: none;
-    border-bottom: 3px solid white;
+    &::before {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
   }
+
+  
 
   @media screen and (max-width: $lg) {
     font-size: 12px;

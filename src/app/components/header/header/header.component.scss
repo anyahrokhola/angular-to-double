@@ -5,11 +5,8 @@
   position: relative;
 }
 
-img{
-    @media screen and (max-width: $xl){
-        width: 200px;
-    }
-
+.logo{
+  width: 200px;
     @media screen and (max-width: $sm){
         width: 136px;
         height: 35px;

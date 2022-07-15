@@ -1,8 +1,8 @@
 @import "variables";
 @import "media-variables";
 
-a{
-    color: white;
+a {
+  color: white;
 }
 
 .footer-wrapper {
@@ -19,7 +19,10 @@ a{
 .wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
+  @media screen and (max-width: $md) {
+    align-items: center;
+  }
 }
 
 .social-media {
@@ -31,8 +34,19 @@ a{
 }
 
 .logo {
+  width: 300px;
   margin-bottom: 45px;
+
+  @media screen and (max-width: $sm) {
+    width: 250px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
+
 
 .contact {
   display: flex;
@@ -47,7 +61,7 @@ a{
   }
 
   @media screen and (max-width: $sm) {
-    margin-left: 10%;
+    margin-left: 15%;
   }
 }
 
