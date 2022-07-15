@@ -70,7 +70,7 @@ $elipse-width: 1200px;
 .elipse {
   position: absolute;
   top: 12%;
-  right: calc($elipse-width / 2);
+  right: calc($elipse-width / -2);
   border-radius: 50%;
   width: $elipse-width;
   height: 70%;
