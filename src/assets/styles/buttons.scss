@@ -1,0 +1,39 @@
+@import "variables";
+@import "media-variables";
+
+.button-main {
+  min-width: 270px;
+  height: 60px;
+
+  &:hover {
+    border: 3px solid $color-active;
+  }
+
+  &:active {
+    background-color: $color-active;
+  }
+}
+
+.button-header {
+    width: 170px;
+    height: 40px;
+  
+    &:hover {
+      border: 2px solid white;
+    }
+  
+    &:active {
+      background-color: white;
+      color: $color-active;
+    }
+  
+    @media screen and (max-width: $xl) {
+      width: 120px;
+      height: 30px;
+    }
+  
+    @media screen and (max-width: $md) {
+      display: none;
+    }
+  }
+  

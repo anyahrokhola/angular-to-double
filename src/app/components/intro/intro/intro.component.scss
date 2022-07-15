@@ -1,5 +1,5 @@
-@import "variables.scss";
-@import "media-variables.scss";
+@import "variables";
+@import "media-variables";
 
 .intro-text {
   @media screen and (max-width: $xl) {

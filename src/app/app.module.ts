@@ -5,8 +5,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header/header.component';
 import { FooterComponent } from './components/footer/footer/footer.component';
 import { IntroComponent } from './components/intro/intro/intro.component';
-import { MainButtonComponent } from './components/main-button/main-button.component';
-import { HeaderButtonComponent } from './components/header-button/header-button.component';
 import { MenuComponent } from './components/menu/menu/menu.component';
 import { MobileMenuComponent } from './components/mobile-menu/mobile-menu/mobile-menu.component';
 import { FaqComponent } from './components/faq/faq.component';
@@ -20,6 +18,8 @@ import { FormModule } from './modules/form/form.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgCarouselModule } from '@silmar/ng-carousel';
 import { SocialMediaComponent } from './components/social-media/social-media.component';
+import { ButtonMainDirective } from './directives/button-main.directive';
+import { ButtonHeaderDirective } from './directives/button-header.directive';
 
 @NgModule({
   declarations: [
@@ -27,8 +27,6 @@ import { SocialMediaComponent } from './components/social-media/social-media.com
     HeaderComponent,
     FooterComponent,
     IntroComponent,
-    MainButtonComponent,
-    HeaderButtonComponent,
     MenuComponent,
     MobileMenuComponent,
     FaqComponent,
@@ -38,6 +36,8 @@ import { SocialMediaComponent } from './components/social-media/social-media.com
     MoreInfoComponent,
     ContactsComponent,
     SocialMediaComponent,
+    ButtonMainDirective,
+    ButtonHeaderDirective,
   ],
   imports: [
     BrowserModule,
