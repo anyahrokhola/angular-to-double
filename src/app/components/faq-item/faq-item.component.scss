@@ -45,7 +45,6 @@
 }
 
 i {
-  cursor: pointer;
   font-size: 36px;
   transition: 300ms;
 
@@ -56,6 +55,7 @@ i {
 }
 
 .question {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
