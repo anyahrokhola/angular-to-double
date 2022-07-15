@@ -70,7 +70,7 @@ $elipse-width: 1200px;
 .elipse {
   position: absolute;
   top: 12%;
-  right: -#{$elipse-width/2};
+  right: calc($elipse-width / 2);
   border-radius: 50%;
   width: $elipse-width;
   height: 70%;
@@ -80,13 +80,13 @@ $elipse-width: 1200px;
   @media screen and (max-width: $xl) {
     $elipse-width: 700px;
     width: $elipse-width;
-    right: -#{$elipse-width/2};
+    right: calc($elipse-width / -2);
   }
 
   @media screen and (max-width: $lg) {
     $elipse-width: 800px;
     width: $elipse-width;
-    right: -#{$elipse-width/2};
+    right: calc($elipse-width / -2);
     height: 50%;
   }
 
@@ -94,13 +94,13 @@ $elipse-width: 1200px;
     top: 20px;
     $elipse-width: 660px;
     width: $elipse-width;
-    right: -#{$elipse-width/2};
+    right: calc($elipse-width / -2);
   }
 
   @media screen and (max-width: $sm) {
     $elipse-width: 360px;
     width: $elipse-width;
-    right: -#{$elipse-width/2};
+    right: calc($elipse-width / -2);
     height: 30%;
   }
 }
