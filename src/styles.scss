@@ -3,12 +3,12 @@
 @import "media-variables";
 @import "reset";
 
-html {
+body{
   font-family: "Montserrat";
-  overflow-x: hidden;
-  line-height: 1.4;
   font-size: 18px;
+  line-height: 1.4;
   color: $color-text;
+  overflow-x: hidden;
 }
 
 
