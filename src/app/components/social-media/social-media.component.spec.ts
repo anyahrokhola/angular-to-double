@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InputNumberComponent } from './input-number.component';
+import { SocialMediaComponent } from './social-media.component';
 
-describe('InputNumberComponent', () => {
-  let component: InputNumberComponent;
-  let fixture: ComponentFixture<InputNumberComponent>;
+describe('SocialMediaComponent', () => {
+  let component: SocialMediaComponent;
+  let fixture: ComponentFixture<SocialMediaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ InputNumberComponent ]
+      declarations: [ SocialMediaComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(InputNumberComponent);
+    fixture = TestBed.createComponent(SocialMediaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

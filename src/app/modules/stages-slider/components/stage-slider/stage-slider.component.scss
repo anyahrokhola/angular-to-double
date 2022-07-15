@@ -1,6 +1,7 @@
 @import "variables.scss";
 @import "media-variables.scss";
 
+
 .wrapper {
   display: block;
   margin-left: auto;
@@ -45,10 +46,15 @@
   border: 1px solid $color-active;
   border-radius: 15px;
 
+
   @media screen and (max-width: $md) {
     flex-direction: column;
     padding: 20px;
     height: 615px;
+  }
+
+  @media screen and (max-width: $sm) {
+    margin: 0 20px;
   }
 }
 
@@ -56,14 +62,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 280px;
-  height: 280px;
 }
 
 img {
   width: 250px;
   height: 250px;
   object-fit: cover;
+
+  @media screen and (max-width: $sm) {
+    width: 220px;
+    height: 230px;
+  }
 }
 
 .description {
@@ -80,8 +89,23 @@ img {
   justify-content: center;
   margin-top: 80px;
   margin-bottom: 60px;
+
+  @media screen and (max-width: $xl) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: $sm) {
+    margin-top: 25px;
+    margin-bottom: 45px;
+    padding: 0 37px;
+    justify-content: space-between;
+  }
 }
 
 .slider-button {
   margin-right: 30px;
+
+  @media screen and (max-width: $sm) {
+    margin-right: 0;
+  }
 }
