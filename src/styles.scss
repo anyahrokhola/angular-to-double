@@ -136,7 +136,12 @@ input {
   @media screen and (max-width: $xl) {
     padding: 30px 0;
   }
+
+  @media screen and (max-width: $sm) {
+    padding: 30px 10px;
+  }
 }
+
 
 .slider-button {
   cursor: pointer;
